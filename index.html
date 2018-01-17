@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="script.js"></script>
+    <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+
+<div id = "title">
+    <p><b>Grade Calculator</b></p>
+</div>
+
+<div id = "subtitle">
+    <p><b>
+        Enter your grades to find out what your grade is and find out what you need on your final to get the desired grade.
+    </b></p>
+</div>
+
+<table id = "table" border=”1”>
+    <tr>
+        <td>Homework Points
+            <input type="text" id="HomeworkPoints" value="15,25" size="25">
+        </td>
+        <td>Homework Weight
+            <input type="text" id="HomeworkWeight" value="25" size="25">
+        </td>
+        <td id="HomeworkGrade">Grade:</td>
+    </tr>
+    <tr>
+        <td>Participation Points
+            <input type="text" id="ParticipationPoints" value="42,69,99" size="25">
+        </td>
+        <td>Participation Weight
+            <input type="text" id="ParticipationWeight" value="25" size="25"></td>
+        <td id="ParticipationGrade">Grade:</td>
+    </tr>
+    <tr>
+        <td>Test Points
+            <input type="text" id="TestPoints" value="100,84,96" size="25">
+        </td>
+        <td>Test Weight
+            <input type="text" id="TestWeight" value="50" size="25">
+        </td>
+        <td id="TestGrade">Grade:</td>
+    </tr>
+</table>
+
+<div id = "displayGrade">
+    <p><b>
+        Current Grade
+    </b></p>
+</div>
+
+<div id = "CurrentGrade" >
+</div>
+
+
+<table id = "table2" border="1">
+    <tr>
+        <td>Grade Desired
+            <input type="text" id="GradeNeeded" value="" size="25">
+        </td>
+        <td>Final Weight
+            <input type="text" id="FinalWeight" value="" size="25">
+        </td>
+    </tr>
+</table>
+
+<div id = "displayFinalGrade">
+    <p><b>
+        Grade needed on final
+    </b></p>
+</div>
+
+<div id = "GradeNeededonFinal"></div>
+
+<button id="myButton" onclick="control()">Calculate</button>
+
+<button id="myButton2" onclick="reload()">Redo</button>
+
+</body>
+</html>
